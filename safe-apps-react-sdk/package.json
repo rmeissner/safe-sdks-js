@@ -2,7 +2,6 @@
   "name": "safe-apps-react-sdk",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
   "main": "src/index.ts",
   "dependencies": {
     "@gnosis.pm/safe-apps-sdk": "https://github.com/gnosis/safe-apps-sdk",
