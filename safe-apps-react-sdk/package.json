@@ -1,5 +1,5 @@
 {
-  "name": "safe-apps-react-sdk",
+  "name": "@rmeissner/safe-apps-react-sdk",
   "version": "0.1.0",
   "main": "src/index.ts",
   "license": "MIT",
