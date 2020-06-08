@@ -1,5 +1,7 @@
 # Safe Apps React SDK
 
+![npm](https://img.shields.io/npm/v/@rmeissner/safe-apps-react-sdk)
+
 This sdk should provide a simple way to write a React.js [Safe app](https://docs.gnosis.io/safe/docs/sdks_safe_apps/)
 
 ### How to use
