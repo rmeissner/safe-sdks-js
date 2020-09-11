@@ -5,16 +5,18 @@
   "main": "src/index.tsx",
   "license": "MIT",
   "dependencies": {
-    "@gnosis.pm/safe-apps-sdk": "https://github.com/gnosis/safe-apps-sdk",
+    "@gnosis.pm/safe-apps-sdk": "https://github.com/gnosis/safe-apps-sdk#development",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
+    "@types/uuid": "^8.3.0",
     "react": "^16.13.1",
     "react-scripts": "3.4.1",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "uuid": "^8.3.0"
   },
   "scripts": {
     "start": "PORT=3002 react-scripts start",
