@@ -1,28 +1,31 @@
 {
   "name": "@rmeissner/safe-apps-react-sdk",
   "private": false,
-  "version": "0.3.1",
-  "main": "src/index.tsx",
+  "version": "0.3.2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
   "dependencies": {
     "@gnosis.pm/safe-apps-sdk": "https://github.com/gnosis/safe-apps-sdk#development",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/uuid": "^8.3.0",
     "react": "^16.13.1",
     "react-scripts": "3.4.1",
-    "typescript": "~3.7.2",
+    "typescript": "^3.9.7",
     "uuid": "^8.3.0"
   },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/testing-library__dom": "^7.5.0"
+  },
   "scripts": {
-    "start": "PORT=3002 react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "prepublish": "yarn build",
+    "build": "yarn rimraf dist && yarn tsc"
   },
   "eslintConfig": {
     "extends": "react-app"
