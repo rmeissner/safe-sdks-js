@@ -1,0 +1,7 @@
+{
+    "private": true,
+    "workspaces": [
+        "safe-apps-react-sdk",
+        "safe-contracts-sdk"
+    ]
+}
