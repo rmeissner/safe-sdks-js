@@ -5,6 +5,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
   "dependencies": {
     "@gnosis.pm/safe-apps-sdk": "https://github.com/gnosis/safe-apps-sdk#development",
     "@types/jest": "^24.0.0",
