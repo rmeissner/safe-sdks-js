@@ -33,6 +33,27 @@ import { useSafe } from '@rmeissner/safe-apps-react-sdk';
 
 const App = () => {
   const safe = useSafe()
-  return (<div>{safe.getSafeInfo().safeAddress}</div>)
+  return (<div>{safe.info.safeAddress}</div>)
 }
+```
+
+### Usages
+
+#### Send transactions
+```js
+const txs: Transaction[] = [
+  {
+    "to": "0x31415629...",
+    "value": "0",
+    "data": "0xbaddad"
+  },
+  //...
+]
+// Returns a hash to identify the Safe transaction
+const safeTxHash: string = await safe.sendTransactions(txs)
+```
+
+#### Load Safe transaction information
+```js
+const safeTx: SafeTransaction = await safe.loadSafeTransaction(safeTxHash)
 ```

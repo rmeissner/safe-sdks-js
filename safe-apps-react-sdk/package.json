@@ -1,7 +1,7 @@
 {
   "name": "@rmeissner/safe-apps-react-sdk",
   "private": false,
-  "version": "0.3.4",
+  "version": "0.4.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
@@ -10,18 +10,19 @@
     "README.md"
   ],
   "dependencies": {
-    "@gnosis.pm/safe-apps-sdk": "https://github.com/gnosis/safe-apps-sdk#development",
+    "@gnosis.pm/safe-apps-sdk": "0.4.1",
     "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
     "@types/uuid": "^8.3.0",
-    "react": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "typescript": "^3.9.7",
     "uuid": "^8.3.0"
+  },
+  "peerDependencies": {
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.49",
+    "react": "^16.13.1"
   },
   "devDependencies": {
     "rimraf": "^3.0.2",
+    "typescript": "^3.9.7",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
